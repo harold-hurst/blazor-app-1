@@ -1,0 +1,18 @@
+﻿@page "/map"
+@rendermode InteractiveServer
+
+<PageTitle>Map</PageTitle>
+
+<div id="map"></div>
+
+@code {
+    [Inject] IJSRuntime JS { get; set; } = default!;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initializeLeafletMap");
+        }
+    }
+}
