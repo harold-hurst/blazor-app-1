@@ -1,11 +1,15 @@
+/* variables */
+
 :root {
   --dark-gray: #f3f4f6;
   --text-primary: #212529;
   --text-secondary: #6b7280;
   --light-blue: #e1f3fe80;
   --light-yellow: #fbbd231a;
+  --light-green: #16a24933;
 }
 
+/* custom classes */
 .text-custom-primary {
   color: var(--text-primary);
 }
@@ -20,6 +24,10 @@
 
 .background-custom-light-yellow {
   background-color: var(--light-yellow);
+}
+
+.background-custom-light-green {
+  background-color: var(--light-green);
 }
 
 html,

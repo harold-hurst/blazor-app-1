@@ -1,0 +1,182 @@
+﻿@* Make this a routable page *@
+
+@page "/"
+
+<PageTitle>Dashboard</PageTitle>
+
+<h2>Welcome Back!</h2>
+
+<p>Manage your services and account from your personal dashboard</p>
+
+<div class="row">
+    <div class="col-md-6 col-lg-3">
+        <!-- Column 1 content -->
+        <div class="card mb-3 background-custom-light-blue">
+
+            <div class="card-body card-custom">
+                <div>
+                    <p class="card-title">Next collection</p>
+                    <p class="card-text fs-3 fw-bold">Tomorrow</p>
+                </div>
+
+                <div class="text-primary">
+                    <Calendar />
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <!-- Column 2 content -->
+        <div class="card mb-3 background-custom-light-green">
+
+
+            <div class="card-body card-custom">
+                <div>
+                    <p class="card-title">Active Issues</p>
+                    <p class="card-text fs-3 fw-bold">0</p>
+                </div>
+                <div class="text-success">
+                    <Speech />
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <!-- Column 2 content -->
+        <div class="card mb-3 background-custom-light-green">
+
+
+            <div class="card-body card-custom">
+                <div>
+                    <p class="card-title">Subscription</p>
+                    <p class="card-text fs-3 fw-bold">Active</p>
+                </div>
+                <div class="text-success">
+                    <Tick />
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <!-- Column 2 content -->
+        <div class="card mb-3 background-custom-light-yellow">
+            <div class="card-body card-custom">
+                <div>
+                    <p class="card-title">Alerts</p>
+                    <p class="card-text fs-3 fw-bold">3</p>
+                </div>
+
+                <div class="text-warning">
+                    <Bell />
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card p-4 h-100">
+
+            <h3 class="heading-icon-align">
+                <Calendar />Upcoming collections
+            </h3>
+            <p>Your next scheduled services and appointments</p>
+
+            <div class="bg-light p-3 rounded card-custom mb-4">
+                <div>
+                    <p class="fw-bold">Waste Collection</p>
+                    <p class="mb-0">Tomorrow, 8:00AM</p>
+                </div>
+                <div class="background-dark-gray rounded-pill px-3 fw-bold fs-6 text-custom-secondary">
+                    scheduled
+                </div>
+            </div>
+
+            <div class="bg-light p-3 rounded card-custom">
+                <div>
+                    <p class="fw-bold">Recycling Collection</p>
+                    <p class="mb-0">Friday, 8:00AM</p>
+                </div>
+                <div class="background-dark-gray rounded-pill px-3 fw-bold fs-6 text-custom-secondary">
+                    scheduled
+                </div>
+            </div>
+
+            <button class="btn btn-primary mt-3 button-custom bg-light fw-bold">View Full Calender</button>
+
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card p-4 h-100">
+
+            <h3 class="heading-icon-align">
+                <Bell />Recent Alerts
+            </h3>
+            <p>Important updates and notifications</p>
+
+            <div class="background-custom-light-blue border-left-4px-blue p-3 rounded mb-4">
+                <div>
+                    <p class="fw-bold">Waste Collection</p>
+                    <p class="mb-0">Tomorrow, 8:00AM</p>
+                </div>
+            </div>
+
+            <div class="background-custom-light-yellow border-left-4px-yellow p-3 rounded card-custom">
+                <div>
+                    <p class="fw-bold">Recycling Collection</p>
+                    <p class="mb-0">Friday, 8:00AM</p>
+                </div>
+            </div>
+            <button class="btn btn-primary mt-3 button-custom bg-light fw-bold">View All Alerts</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-6 col-lg-3 mb-4">
+        <!-- Column 1 content -->
+        <button class="btn btn-primary button-custom bg-light fw-bold h-100 w-100 py-3">
+
+            <Speech />
+
+            <span class="fs-6">Report Issue</span>
+        </button>
+    </div>
+
+    <div class="col-md-6 col-lg-3 mb-4">
+        <!-- Column 2 content -->
+        <button class="btn btn-primary button-custom bg-light fw-bold h-100 w-100 py-3">
+
+            <CreditCard />
+
+            <span class="fs-6">Report Issue</span>
+        </button>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <!-- Column 2 content -->
+        <button class="btn btn-primary button-custom bg-light fw-bold h-100 w-100 py-3">
+
+            <QrCode />
+
+            <span class="fs-6">Report Issue</span>
+        </button>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <!-- Column 2 content -->
+        <button class="btn btn-primary button-custom bg-light fw-bold h-100 w-100 py-3">
+
+            <Calendar />
+
+            <span class="fs-6">View Calendar</span>
+        </button>
+    </div>
+</div>
