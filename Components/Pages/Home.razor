@@ -1,9 +1,212 @@
-﻿@page "/"
+﻿@* Make this a routable page *@
+
+@page "/"
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Welcome Back!</h1>
 
-Welcome to your new app.
 
-<Counter IncrementAmount="10" />
+<p>Manage your services and account from your personal dashboard</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <!-- Column 1 content -->
+
+
+        <div class="card mb-3 ">
+
+
+            <div class="card-body card-custom">
+                <div>
+                    <p class="card-title">Next collection</p>
+                    <p class="card-text fs-2 fw-bold">Tomorrow</p>
+                </div>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-calendar h-8 w-8 text-primary"
+                    data-lov-id="src/components/customer/DashboardOverview.tsx:30:14" data-lov-name="Calendar"
+                    data-component-path="src/components/customer/DashboardOverview.tsx" data-component-line="30"
+                    data-component-file="DashboardOverview.tsx" data-component-name="Calendar"
+                    data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-primary%22%7D">
+                    <path d="M8 2v4"></path>
+                    <path d="M16 2v4"></path>
+                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                    <path d="M3 10h18"></path>
+                </svg>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-md-6">
+        <!-- Column 2 content -->
+        <div class="card mb-3 ">
+
+
+            <div class="card-body card-custom">
+                <div>
+                    <p class="card-title">Active Issues</p>
+                    <p class="card-text fs-2 fw-bold">0</p>
+                </div>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-message-square h-8 w-8 text-accent"
+                    data-lov-id="src/components/customer/DashboardOverview.tsx:42:14" data-lov-name="MessageSquare"
+                    data-component-path="src/components/customer/DashboardOverview.tsx" data-component-line="42"
+                    data-component-file="DashboardOverview.tsx" data-component-name="MessageSquare"
+                    data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-accent%22%7D">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-md-6">
+        <!-- Column 2 content -->
+        <div class="card mb-3 ">
+
+
+            <div class="card-body card-custom">
+                <div>
+                    <p class="card-title">Subscription</p>
+                    <p class="card-text fs-2 fw-bold">Active</p>
+                </div>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-circle-check-big h-8 w-8 text-success"
+                    data-lov-id="src/components/customer/DashboardOverview.tsx:54:14" data-lov-name="CheckCircle"
+                    data-component-path="src/components/customer/DashboardOverview.tsx" data-component-line="54"
+                    data-component-file="DashboardOverview.tsx" data-component-name="CheckCircle"
+                    data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-success%22%7D">
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                    <path d="m9 11 3 3L22 4"></path>
+                </svg>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-md-6">
+        <!-- Column 2 content -->
+        <div class="card mb-3 ">
+            <div class="card-body card-custom">
+                <div>
+                    <p class="card-title">Alerts</p>
+                    <p class="card-text fs-2 fw-bold">3</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-bell h-8 w-8 text-warning"
+                    data-lov-id="src/components/customer/DashboardOverview.tsx:66:14" data-lov-name="Bell"
+                    data-component-path="src/components/customer/DashboardOverview.tsx" data-component-line="66"
+                    data-component-file="DashboardOverview.tsx" data-component-name="Bell"
+                    data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-warning%22%7D">
+                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+
+    <div class="col-md-6">
+        <div class="card mb-3 p-4">
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-calendar h-5 w-5 text-primary"
+                    data-lov-id="src/components/customer/DashboardOverview.tsx:77:14" data-lov-name="Calendar"
+                    data-component-path="src/components/customer/DashboardOverview.tsx" data-component-line="77"
+                    data-component-file="DashboardOverview.tsx" data-component-name="Calendar"
+                    data-component-content="%7B%22className%22%3A%22h-5%20w-5%20text-primary%22%7D">
+                    <path d="M8 2v4"></path>
+                    <path d="M16 2v4"></path>
+                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                    <path d="M3 10h18"></path>
+                </svg>Upcoming collections</h2>
+            <p>Your next scheduled services and appointments</p>
+
+            <div class="bg-light p-3 rounded card-custom mb-4">
+                <div>
+                    <p class="fw-bold">Waste Collection</p>
+                    <p>Tomorrow, 8:00AM</p>
+                </div>
+                <div class="background-dark-gray rounded-pill px-3 fw-bold fs-6 text-custom-secondary">
+                    scheduled
+                </div>
+            </div>
+
+            <div class="bg-light p-3 rounded card-custom">
+                <div>
+                    <p class="fw-bold">Recycling Collection</p>
+                    <p>Friday, 8:00AM</p>
+                </div>
+                <div class="background-dark-gray rounded-pill px-3 fw-bold fs-6 text-custom-secondary">
+                    scheduled
+                </div>
+            </div>
+
+            <button class="btn btn-primary mt-3">View Full Calender</button>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="col-md-6">
+
+        <div class="card mb-3 p-4">
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-bell h-5 w-5 text-warning"
+                    data-lov-id="src/components/customer/DashboardOverview.tsx:112:14" data-lov-name="Bell"
+                    data-component-path="src/components/customer/DashboardOverview.tsx" data-component-line="112"
+                    data-component-file="DashboardOverview.tsx" data-component-name="Bell"
+                    data-component-content="%7B%22className%22%3A%22h-5%20w-5%20text-warning%22%7D">
+                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                </svg>Recent Alerts</h2>
+            <p>Important updates and notifications</p>
+
+            <div class="bg-light p-3 rounded card-custom mb-4">
+                <div>
+                    <p class="fw-bold">Waste Collection</p>
+                    <p>Tomorrow, 8:00AM</p>
+                </div>
+                <div class="background-dark-gray rounded-pill px-3 fw-bold fs-6 text-custom-secondary">
+                    scheduled
+                </div>
+            </div>
+
+            <div class="bg-light p-3 rounded card-custom">
+                <div>
+                    <p class="fw-bold">Recycling Collection</p>
+                    <p>Friday, 8:00AM</p>
+                </div>
+                <div class="background-dark-gray rounded-pill px-3 fw-bold fs-6 text-custom-secondary">
+                    scheduled
+                </div>
+            </div>
+
+            <button class="btn btn-primary mt-3">View Full Alerts</button>
+
+        </div>
+    </div>
+</div>

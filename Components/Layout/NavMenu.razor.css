@@ -84,7 +84,7 @@
 }
 
 .nav-item ::deep .nav-link:hover {
-    background-color: hsl(220, 100%, 80%);
+    background-color: hsl(220, 100%, 90%);
 
 }
 

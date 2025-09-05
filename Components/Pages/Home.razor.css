@@ -1,0 +1,10 @@
+.card-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.background-dark-gray {
+    background-color: var(--dark-gray);
+}
