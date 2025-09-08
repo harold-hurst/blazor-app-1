@@ -6,7 +6,7 @@
 
 <h2>Welcome Back!</h2>
 
-<p>Manage your services and account from your personal dashboard</p>
+<p class="text-secondary">Manage your services and account from your personal dashboard</p>
 
 <div class="row">
     <div class="col-md-6 col-lg-3">
@@ -15,15 +15,14 @@
 
             <div class="card-body card-custom">
                 <div>
-                    <p class="card-title">Next collection</p>
+                    <p class="card-title text-secondary">Next collection</p>
                     <p class="card-text fs-3 fw-bold">Tomorrow</p>
                 </div>
 
                 <div class="text-primary">
-                    <Calendar />
+                    <Calendar Height="32" />
                 </div>
             </div>
-
         </div>
     </div>
     <div class="col-md-6 col-lg-3">
@@ -33,11 +32,11 @@
 
             <div class="card-body card-custom">
                 <div>
-                    <p class="card-title">Active Issues</p>
+                    <p class="card-title text-secondary">Active Issues</p>
                     <p class="card-text fs-3 fw-bold">0</p>
                 </div>
                 <div class="text-success">
-                    <Speech />
+                    <Speech Height="32" />
                 </div>
 
             </div>
@@ -52,11 +51,11 @@
 
             <div class="card-body card-custom">
                 <div>
-                    <p class="card-title">Subscription</p>
+                    <p class="card-title text-secondary">Subscription</p>
                     <p class="card-text fs-3 fw-bold">Active</p>
                 </div>
                 <div class="text-success">
-                    <Tick />
+                    <Tick Height="32" />
                 </div>
             </div>
 
@@ -68,12 +67,12 @@
         <div class="card mb-3 background-custom-light-yellow">
             <div class="card-body card-custom">
                 <div>
-                    <p class="card-title">Alerts</p>
+                    <p class="card-title text-secondary">Alerts</p>
                     <p class="card-text fs-3 fw-bold">3</p>
                 </div>
 
                 <div class="text-warning">
-                    <Bell />
+                    <Bell Height="32" />
                 </div>
 
             </div>
@@ -83,30 +82,31 @@
 
 <div class="row">
     <div class="col-md-6 mb-4">
-        <div class="card p-4 h-100">
+        <div class="card p-4 h-100 shadow-sm">
 
             <h3 class="heading-icon-align">
-                <Calendar />Upcoming collections
+                    <Calendar />
+                Upcoming collections
             </h3>
-            <p>Your next scheduled services and appointments</p>
+            <p class="text-secondary">Your next scheduled services and appointments</p>
 
             <div class="bg-light p-3 rounded card-custom mb-4">
                 <div>
                     <p class="fw-bold">Waste Collection</p>
-                    <p class="mb-0">Tomorrow, 8:00AM</p>
+                    <p class="mb-0 text-secondary">Tomorrow, 8:00AM</p>
                 </div>
-                <div class="background-dark-gray rounded-pill px-3 fw-bold fs-6 text-custom-secondary">
-                    scheduled
+                <div class="background-dark-gray rounded-pill px-2 fw-bold fs-6 text-custom-secondary">
+                    <small>scheduled</small>
                 </div>
             </div>
 
             <div class="bg-light p-3 rounded card-custom">
                 <div>
                     <p class="fw-bold">Recycling Collection</p>
-                    <p class="mb-0">Friday, 8:00AM</p>
+                    <p class="mb-0 text-secondary">Friday, 8:00AM</p>
                 </div>
-                <div class="background-dark-gray rounded-pill px-3 fw-bold fs-6 text-custom-secondary">
-                    scheduled
+                <div class="background-dark-gray rounded-pill px-2 fw-bold fs-6 text-custom-secondary">
+                    <small>scheduled</small>
                 </div>
             </div>
 
@@ -115,24 +115,24 @@
         </div>
     </div>
     <div class="col-md-6 mb-4">
-        <div class="card p-4 h-100">
+        <div class="card p-4 h-100 shadow-sm">
 
             <h3 class="heading-icon-align">
                 <Bell />Recent Alerts
             </h3>
-            <p>Important updates and notifications</p>
+            <p class="text-secondary">Important updates and notifications</p>
 
             <div class="background-custom-light-blue border-left-4px-blue p-3 rounded mb-4">
                 <div>
                     <p class="fw-bold">Waste Collection</p>
-                    <p class="mb-0">Tomorrow, 8:00AM</p>
+                    <p class="mb-0 text-secondary">Tomorrow, 8:00AM</p>
                 </div>
             </div>
 
             <div class="background-custom-light-yellow border-left-4px-yellow p-3 rounded card-custom">
                 <div>
                     <p class="fw-bold">Recycling Collection</p>
-                    <p class="mb-0">Friday, 8:00AM</p>
+                    <p class="mb-0 text-secondary">Friday, 8:00AM</p>
                 </div>
             </div>
             <button class="btn btn-primary mt-3 button-custom bg-light fw-bold">View All Alerts</button>

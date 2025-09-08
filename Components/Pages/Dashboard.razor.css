@@ -13,7 +13,7 @@
   color: var(--text-primary);
   border: 1px solid #ced4da;
   transition: background 0.2s;
-
+gap: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,15 +27,16 @@
 }
 
 .border-left-4px-blue {
-  border-left: 4px solid #1861ac; /* Adjust the color as needed */
+  border-left: 4px solid #0e6ffd; /* Adjust the color as needed */
 }
 
 .border-left-4px-yellow {
-  border-left: 4px solid#fbbd23;
+  border-left: 4px solid #ffc108;
 }
 
 .heading-icon-align {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  height: 60px;
 }
