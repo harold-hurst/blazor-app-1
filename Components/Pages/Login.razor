@@ -1,0 +1,41 @@
+@page "/login"
+
+@inject HttpClient Http
+@using System.Net.Http.Json
+
+@code {
+    private string username = string.Empty;
+    private string password = string.Empty;
+    private string message = string.Empty;
+
+    async Task HandleLogin()
+    {
+        // create a login object with values from the input fields
+        var login = new { Username = username, Password = password };
+
+        // asynchronouse post reuest to the backend
+        var response = await Http.PostAsJsonAsync("http://localhost:5000/auth/login", login);
+
+        if (response.IsSuccessStatusCode)
+        {
+            var result = await response.Content.ReadFromJsonAsync<LoginResponse>();
+            message = "Logged in! Token: " + result.Token;
+            // Store token in local storage (optional)
+        }
+        else
+        {
+            message = "Login failed.";
+        }
+    }
+
+    public class LoginResponse
+    {
+        public string Token { get; set; }
+    }
+}
+
+<h3>Resident Portal Login</h3>
+<input placeholder="Username" @bind="username" />
+<input placeholder="Password" type="password" @bind="password" />
+<button @onclick="HandleLogin">Login</button>
+<p>@message</p>
